@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Flip Clock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+<div class="min-h-screen flex items-center justify-center" style="background-color:  rgb(27, 65, 71);">
+
+  <!-- clock wrapper -->
+  <div class="relative font-mono font-extrabold text-9xl grid grid-cols-3 text-right text-white shadow-2xl gap-x-px border-8 border-blue-100 rounded">
+
+    <!-- clock stand -->
+    <div class="absolute inset-x-0 -bottom-5 mx-auto flex justify-center">
+      <div class="w-3/4 h-5 bg-blue-100 rounded"></div>
+    </div>  
+
+    <!-- left timer -->
+    <div class="relative py-8 px-5">
+      <div class="absolute inset-0 w-full h-full grid grid-rows-2">
+        <!-- background squares -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900"></div>
+        <div class="bg-gradient-to-br from-gray-700 to-gray-900"></div>
+      </div>
+      <div class="relative" id="hrs">05</div>
+      <!-- line across middle -->
+      <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+        <div class="h-px w-full bg-gray-800"></div>
+      </div>
+    </div>
+
+    <!-- middle timer (seconds) -->
+    <div class="relative py-8 px-5">
+      <div class="absolute inset-0 w-full h-full grid grid-rows-2">
+        <!-- background squares -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900"></div>
+        <div class="bg-gradient-to-br from-gray-700 to-gray-900"></div>
+      </div>
+      <div class="relative" id="mins">30</div>
+      <!-- line across middle -->
+      <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+        <div class="h-px w-full bg-gray-800"></div>
+      </div>
+    </div>
+
+    <!-- right timer -->
+    <div class="relative py-8 px-5">
+      <div class="absolute inset-0 w-full h-full grid grid-rows-2">
+        <!-- background squares -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900"></div>
+        <div class="bg-gradient-to-br from-gray-700 to-gray-900"></div>
+      </div>
+      <div class="relative" id="secs">47</div>
+      <!-- line across middle -->
+      <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+        <div class="h-px w-full bg-gray-800"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
